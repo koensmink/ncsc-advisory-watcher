@@ -1,1 +1,2 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2025-0381,[1.00],[M/H],Kwetsbaarheden verholpen in Splunk Enterprise en Splunk Cloud Platform,https://advisories.ncsc.nl/advisory?id=NCSC-2025-0381
