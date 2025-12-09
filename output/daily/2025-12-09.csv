@@ -1,2 +1,5 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2025-0385,[1.00],[M/M],Kwetsbaarheden verholpen in Microsoft Exchange,https://advisories.ncsc.nl/advisory?id=NCSC-2025-0385
+NCSC-2025-0384,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Office,https://advisories.ncsc.nl/advisory?id=NCSC-2025-0384
+NCSC-2025-0383,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Windows,https://advisories.ncsc.nl/advisory?id=NCSC-2025-0383
 NCSC-2025-0382,[1.00],[M/H],Kwetsbaarheden verholpen in Siemens producten,https://advisories.ncsc.nl/advisory?id=NCSC-2025-0382
