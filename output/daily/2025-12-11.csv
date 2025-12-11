@@ -1,2 +1,4 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2025-0391,[1.00],[M/H],Kwetsbaarheden verholpen in Ivanti Endpoint Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2025-0391
+NCSC-2025-0392,[1.00],[M/H],Kwetsbaarheid verholpen in Barracuda Service Center,https://advisories.ncsc.nl/advisory?id=NCSC-2025-0392
 NCSC-2025-0390,[1.00],[M/H],Kwetsbaarheden verholpen in GitLab CE/EE,https://advisories.ncsc.nl/advisory?id=NCSC-2025-0390
