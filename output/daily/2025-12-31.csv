@@ -1,1 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2025-0405,[1.00],[M/M],Kwetsbaarheid verholpen in Roundcube Webmail,https://advisories.ncsc.nl/advisory?id=NCSC-2025-0405
+NCSC-2025-0404,[1.00],[M/H],Kwetsbaarheid verholpen in SmarterMail,https://advisories.ncsc.nl/advisory?id=NCSC-2025-0404
