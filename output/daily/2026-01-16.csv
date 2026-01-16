@@ -1,4 +1,5 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2026-0019,[1.00],[H/H],Kwetsbaarheid verholpen in Fortinet FortiSIEM,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0019
 NCSC-2026-0018,[1.00],[M/H],Kwetsbaarheden verholpen in TYPO3 CMS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0018
 NCSC-2026-0017,[1.00],[M/M],Kwetsbaarheden verholpen in Juniper Networks JunOS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0017
 NCSC-2026-0016,[1.00],[M/H],Kwetsbaarheden verholpen in Aruba Networks ArubaOS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0016
