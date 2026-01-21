@@ -1,10 +1,11 @@
 AdvisoryID,Version,Severity,Description,Link
-NCSC-2026-0027,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Fusion Middleware,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0027
+NCSC-2026-0033,[1.00],[H/H],Kwetsbaarheid verholpen in GNU Inetutils telnetd,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0033
 NCSC-2026-0032,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle MySQL,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0032
 NCSC-2026-0031,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle JD Edwards,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0031
 NCSC-2026-0030,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Java,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0030
 NCSC-2026-0029,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Hyperion,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0029
 NCSC-2026-0028,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Analytics,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0028
+NCSC-2026-0027,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Fusion Middleware,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0027
 NCSC-2026-0026,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Enterprise Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0026
 NCSC-2026-0025,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Financial Services,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0025
 NCSC-2026-0024,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle E-Business Suite,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0024
