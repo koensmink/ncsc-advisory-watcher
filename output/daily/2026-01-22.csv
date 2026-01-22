@@ -1,4 +1,5 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2026-0037,[1.00],[M/H],Kwetsbaarheden verholpen in GitLab Community Edition en Enterprise Edition,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0037
 NCSC-2026-0036,[1.00],[M/H],Kwetsbaarheden verholpen in Cisco Unified Communications producten,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0036
 NCSC-2026-0035,[1.00],[M/H],Kwetsbaarheid verholpen in Palo Alto Networks PAN-OS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0035
 NCSC-2026-0034,[1.00],[M/H],Kwetsbaarheden verholpen in Atlassian producten,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0034
