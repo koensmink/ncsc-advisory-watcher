@@ -55,7 +55,7 @@ def send_to_telegram(text: str) -> Tuple[bool, str]:
     return (True, "ok")
 
 def build_urgent_message(rows: List[Dict[str, str]]) -> str:
-    header = "🚨😡 <b>URGENT</b>\n\nDetails:\n"
+    header = "🚨<b>URGENT</b>\n\nDetails:\n"
     lines = []
     for r in rows:
         sev = r.get("Severity") or "?"
