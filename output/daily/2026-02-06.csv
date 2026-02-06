@@ -1,1 +1,4 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2026-0040,[1.00],[H/H],Kwetsbaarheid verholpen in SmarterTools SmarterMail,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0040
+NCSC-2026-0045,[1.00],[M/H],Kwetsbaarheid verholpen in Cisco Meeting Management,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0045
+NCSC-2026-0044,[1.00],[M/H],Kwetsbaarheid verholpen in Cisco TelePresence Collaboration Endpoint,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0044
