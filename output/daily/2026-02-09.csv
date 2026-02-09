@@ -1,2 +1,6 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2026-0049,[1.00],[M/H],Kwetsbaarheden verholpen in n8n,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0049
+NCSC-2026-0050,[1.00],[M/H],Kwetsbaarheid verholpen in PEAR,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0050
+NCSC-2026-0048,[1.00],[M/H],Kwetsbaarheid verholpen in BeyondTrust Remote Support,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0048
+NCSC-2026-0047,[1.00],[M/H],Kwetsbaarheid verholpen in Fortinet FortiClient EMS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0047
 NCSC-2026-0046,[1.00],[M/H],Kwetsbaarheden verholpen in Samsung mobile,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0046
