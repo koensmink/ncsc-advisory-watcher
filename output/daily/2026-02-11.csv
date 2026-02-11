@@ -1,3 +1,5 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2026-0062,[1.00],[M/H],Kwetsbaarheden verholpen in GitLab CE/EE,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0062
 NCSC-2026-0061,[1.00],[M/H],Kwetsbaarheden verholpen in Fortinet FortiOS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0061
+NCSC-2026-0060,[1.00],[M/H],"Kwetsbaarheden verholpen in Fortinet FortiSandbox, FortiAuthenticator en FortiClient",https://advisories.ncsc.nl/advisory?id=NCSC-2026-0060
 NCSC-2026-0059,[1.00],[M/H],Kwetsbaarheden verholpen in Ivanti Endpoint Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0059
