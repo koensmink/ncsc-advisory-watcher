@@ -1,1 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2026-0070,[1.00],[M/H],Kwetsbaarheden verholpen in VMware Aria Operations,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0070
+NCSC-2026-0069,[1.00],[M/H],Kwetsbaarheden verholpen in SolarWinds Serv-U,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0069
