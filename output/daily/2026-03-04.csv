@@ -1,2 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2026-0075,[1.00],[M/H],Kwetsbaarheid verholpen in n8n Automation Platform,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0075
 NCSC-2026-0070,[1.00],[M/H],Kwetsbaarheden verholpen in VMware Aria Operations,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0070
