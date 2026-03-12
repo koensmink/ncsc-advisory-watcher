@@ -1,4 +1,8 @@
 AdvisoryID,Version,Severity,Description,Link
+NCSC-2026-0096,[1.00],[M/H],Kwetsbaarheden verholpen in Veeam Backup & Replication,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0096
+NCSC-2026-0095,[1.00],[M/H],Kwetsbaarheid verholpen in pac4j-jwt,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0095
+NCSC-2026-0094,[1.00],[M/H],Kwetsbaarheden verholpen in Cisco IOS XR,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0094
+NCSC-2026-0093,[1.00],[M/H],Kwetsbaarheden verholpen in GitLab,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0093
 NCSC-2026-0092,[1.00],[M/H],Kwetsbaarheden verholpen in Fortinet FortiWeb,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0092
 NCSC-2026-0091,[1.00],[M/H],Kwetsbaarheden verholpen in SAP-producten,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0091
 NCSC-2026-0090,[1.00],[M/H],Kwetsbaarheden verholpen in Adobe Experience Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0090
