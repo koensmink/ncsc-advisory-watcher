@@ -29,10 +29,15 @@ def save_cache(cache: dict) -> None:
 ID_RE = re.compile(r"(NCSC-\d{4}-\d{4})", re.IGNORECASE)
 
 def advisory_key(row: Dict[str, Any]) -> str | None:
-    # 1) voorkeursvelden
+    advisory_id = None
     for field in ("AdvisoryID", "TrackingID", "ID", "CsafID", "Tracking.Id", "tracking.id"):
         if field in row and row[field]:
-            return str(row[field]).strip()
+            advisory_id = str(row[field]).strip().upper()
+            break
+
+    release_date = str(row.get("ReleaseDate", "")).strip()
+    if advisory_id:
+        return f"{advisory_id}|{release_date}" if release_date else advisory_id
     # 2) regex uit Title/Description
     for field in ("Description", "Title", "Naam", "Name"):
         if field in row and row[field]:

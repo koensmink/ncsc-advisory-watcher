@@ -138,6 +138,7 @@ def normalize_advisory(json_data: dict) -> dict:
         "Severity": severity,
         "Description": title,
         "Link": f"{BASE_ROOT}advisory?id={advisory_id}" if advisory_id else "",
+        "ReleaseDate": "",
     }
 
 
@@ -184,6 +185,7 @@ def main():
                 continue
 
             normalized = normalize_advisory(data)
+            normalized["ReleaseDate"] = release_local_date.isoformat()
             if normalized["AdvisoryID"] or normalized["Description"]:
                 rows.append(normalized)
 
@@ -192,7 +194,7 @@ def main():
             continue
 
     # CSV schrijven
-    fieldnames = ["AdvisoryID", "Version", "Severity", "Description", "Link"]
+    fieldnames = ["AdvisoryID", "Version", "Severity", "Description", "Link", "ReleaseDate"]
 
     with open(out_csv, "w", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=fieldnames)
