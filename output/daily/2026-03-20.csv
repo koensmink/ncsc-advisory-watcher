@@ -1,2 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0099,[1.00],[M/H],Kwetsbaarheid verholpen in Oracle Identity Manager en Oracle Web Services Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0099,2026-03-20
 NCSC-2026-0010,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Office,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0010,2026-03-20
