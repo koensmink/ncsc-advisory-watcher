@@ -1,1 +1,2 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0100,[1.00],[M/H],Kwetsbaarheden verholpen in Citrix Netscaler ADC en Netscaler Gateway,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0100,2026-03-23
