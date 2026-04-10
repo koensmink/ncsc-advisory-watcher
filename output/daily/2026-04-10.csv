@@ -1,1 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0109,[1.00],[M/H],Kwetsbaarheden verholpen in Synology SSL VPN Client,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0109,2026-04-10
+NCSC-2026-0108,[1.00],[M/H],Kwetsbaarheid verholpen in Juniper Networks Junos OS Evolved,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0108,2026-04-10
