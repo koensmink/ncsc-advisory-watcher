@@ -1,2 +1,5 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0121,[1.00],[M/H],Kwetsbaarheden verholpen in Fortinet FortiSandbox,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0121,2026-04-15
+NCSC-2026-0120,[1.00],[M/H],Kwetsbaarheden verholpen in Fortinet FortiAnalyzer en FortiManager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0120,2026-04-15
 NCSC-2026-0115,[1.00],[H/H],Kwetsbaarheid verholpen in Microsoft Defender,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0115,2026-04-15
+NCSC-2026-0119,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Windows,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0119,2026-04-15
