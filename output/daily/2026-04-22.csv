@@ -1,4 +1,5 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0127,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle PeopleSoft,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0127,2026-04-22
 NCSC-2026-0126,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle E-Business Suite,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0126,2026-04-22
 NCSC-2026-0125,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Enterprise Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0125,2026-04-22
 NCSC-2026-0124,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Identity Manager Connector,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0124,2026-04-22
