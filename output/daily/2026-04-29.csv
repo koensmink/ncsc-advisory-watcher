@@ -1,1 +1,2 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0129,[1.00],[M/H],Kwetsbaarheden verholpen in Apache Camel,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0129,2026-04-29
