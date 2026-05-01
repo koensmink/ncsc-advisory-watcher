@@ -1,1 +1,2 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0131,[1.00],[M/H],Kwetsbaarheid verholpen in Linux kernel cryptographic subsystem,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0131,2026-05-01
