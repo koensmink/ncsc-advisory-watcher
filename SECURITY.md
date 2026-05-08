@@ -1,7 +1,3 @@
-# Security Policy
-
-Thanks for helping keep this project and its users safe!
-
 ## Supported Versions
 This project targets Python 3.11 and the latest GitHub Actions runner. Older versions may work but are not actively supported.
 
