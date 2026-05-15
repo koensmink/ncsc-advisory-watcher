@@ -1,1 +1,5 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0159,[1.00],[M/H],Kwetsbaarheid verholpen in Microsoft Exchange Server,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0159,2026-05-15
+NCSC-2026-0160,[1.00],[M/H],Kwetsbaarheden verholpen in Ivanti Endpoint Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0160,2026-05-15
+NCSC-2026-0157,[1.00],[H/H],Kwetsbaarheden verholpen in Cisco Catalyst SD-WAN Controller en Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0157,2026-05-15
+NCSC-2026-0158,[1.00],[M/H],Kwetsbaarheid verholpen in AMD processors,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0158,2026-05-15
