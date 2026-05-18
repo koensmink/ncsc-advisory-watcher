@@ -1,1 +1,2 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0164,[1.00],[M/H],Kwetsbaarheid verholpen in NGINX ngx_http_rewrite_module,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0164,2026-05-18
