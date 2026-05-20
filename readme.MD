@@ -207,3 +207,14 @@ Potential improvements:
 - Add structured logging.
 - Add optional NCSC advisory diffing between versions.
 - Add GitHub release artifacts instead of committing output to the repository.
+
+## New options
+
+- `python harvest_ncsc.py --days 7` harvests a 7-day Amsterdam-local window.
+- JSONL output is written to `output/jsonl/YYYY-MM-DD.jsonl`.
+- `notify_ncsc.py` now supports Telegram, Microsoft Teams (`TEAMS_WEBHOOK_URL`) and generic webhooks (`WEBHOOK_URL`, `WEBHOOK_TYPE`).
+
+Workflow env additions:
+- `LOOKBACK_DAYS`
+- `TEAMS_WEBHOOK_URL`
+- `WEBHOOK_URL`
