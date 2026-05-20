@@ -2,7 +2,7 @@
 
 Python-based watcher for Dutch NCSC security advisories.
 
-This project collects NCSC CSAF advisories, normalizes relevant metadata, stores daily CSV output, filters high-risk advisories, deduplicates previously sent alerts, and optionally sends Telegram notifications.
+This project collects NCSC CSAF advisories, normalizes relevant metadata, stores daily CSV and JSONL output, filters high-risk advisories, deduplicates previously sent alerts, and optionally sends Telegram, Microsoft Teams, and generic webhook notifications.
 
 > Primary use case: lightweight security advisory monitoring for homelab, SOC-support, MSP workflows, or personal security intelligence pipelines.
 
@@ -17,7 +17,7 @@ NCSC Advisory Watcher performs the following steps:
 3. Write daily CSV output to `output/daily/`.
 4. Filter advisories based on risk level.
 5. Deduplicate already processed or already notified advisories.
-6. Send high-risk notifications to Telegram.
+6. Send high-risk notifications to Telegram / Teams / generic webhooks.
 7. Persist runtime state for future runs.
 
 ---
@@ -28,8 +28,9 @@ NCSC Advisory Watcher performs the following steps:
 |---|---|
 | CSAF harvesting | Reads NCSC CSAF advisories from the public advisory feed |
 | Daily CSV export | Stores normalized advisory data per day |
+| JSONL export | Stores SIEM/SOAR-friendly newline-delimited events per day |
 | Severity filtering | Sends alerts only for high-risk combinations |
-| Telegram notifications | Sends formatted advisory alerts via Telegram Bot API |
+| Multi-channel notifications | Sends alerts via Telegram, Microsoft Teams, and generic webhooks |
 | Deduplication | Prevents repeated alerts for the same advisory |
 | Message hash check | Avoids sending identical notification payloads repeatedly |
 | GitHub Actions support | Runs automatically through a scheduled workflow |
@@ -59,6 +60,7 @@ NCSC CSAF feed
 harvest_ncsc.py
       |
       |-- output/daily/YYYY-MM-DD.csv
+      |-- output/jsonl/YYYY-MM-DD.jsonl
       |-- output/last_run.json
       |
       v
@@ -137,10 +139,14 @@ black
 |---|---:|---|
 | `TELEGRAM_BOT_TOKEN` | No | Telegram bot token used for sending alerts |
 | `TELEGRAM_CHAT_ID` | No | Target Telegram chat ID |
+| `TEAMS_WEBHOOK_URL` | No | Teams incoming webhook URL |
+| `WEBHOOK_URL` | No | Generic webhook target URL |
+| `WEBHOOK_TYPE` | No | Generic webhook payload style selector (default: `generic`) |
+| `LOOKBACK_DAYS` | No | Lookback window in days for harvesting (default: `1`) |
 | `DEBUG` | No | Enables extra debug behavior when set to `1` |
 | `NO_DEDUPE` | No | Disables dedupe temporarily when set to `1` |
 
-When Telegram variables are not configured, the scripts still run but skip notification delivery.
+When no notification variables are configured, the notifier logs a warning and exits successfully without sending alerts.
 
 ---
 
@@ -150,23 +156,73 @@ When Telegram variables are not configured, the scripts still run but skip notif
 
 ```bash
 python harvest_ncsc.py
+python harvest_ncsc.py --days 7
 ```
 
 This creates or updates:
 
 ```text
 output/daily/<YYYY-MM-DD>.csv
+output/jsonl/<YYYY-MM-DD>.jsonl
 output/last_run.json
+```
+
+### Run notifications
+
+```bash
+python notify_ncsc.py
+```
+
+### Run with Docker
+
+Build image:
+
+```bash
+docker build -t ncsc-advisory-watcher .
+```
+
+Harvest (1-day default):
+
+```bash
+docker run --rm \
+  -v "$(pwd)/output:/app/output" \
+  ncsc-advisory-watcher
+```
+
+Harvest with lookback window:
+
+```bash
+docker run --rm \
+  -v "$(pwd)/output:/app/output" \
+  ncsc-advisory-watcher \
+  python harvest_ncsc.py --days 7
+```
+
+Send notifications from container:
+
+```bash
+docker run --rm \
+  -v "$(pwd)/output:/app/output" \
+  -e TELEGRAM_BOT_TOKEN \
+  -e TELEGRAM_CHAT_ID \
+  -e TEAMS_WEBHOOK_URL \
+  -e WEBHOOK_URL \
+  -e WEBHOOK_TYPE=generic \
+  ncsc-advisory-watcher \
+  python notify_ncsc.py
 ```
 ---
 
 ## Output files
 
-### Daily CSV
-
 ```text
 output/daily/<YYYY-MM-DD>.csv
+output/jsonl/<YYYY-MM-DD>.jsonl
+output/last_run.json
+output/sent_cache.json
 ```
+
+### Daily CSV
 
 Example schema:
 
@@ -194,27 +250,14 @@ Telegram delivery is skipped safely when `TELEGRAM_BOT_TOKEN` or `TELEGRAM_CHAT_
 
 ---
 
-## Roadmap ideas
+## Workflow notes
 
-Potential improvements:
+For GitHub Actions, set these variables/secrets if needed:
 
-- Add configurable lookback window, for example `--days 7`.
-- Add CLI arguments for severity thresholds.
-- Add JSONL output for SIEM/SOAR ingestion.
-- Add Microsoft Teams or webhook notifications.
-- Add unit tests for CSAF parsing and dedupe behavior.
-- Add Dockerfile for reproducible local execution.
-- Add structured logging.
-- Add optional NCSC advisory diffing between versions.
-- Add GitHub release artifacts instead of committing output to the repository.
-
-## New options
-
-- `python harvest_ncsc.py --days 7` harvests a 7-day Amsterdam-local window.
-- JSONL output is written to `output/jsonl/YYYY-MM-DD.jsonl`.
-- `notify_ncsc.py` now supports Telegram, Microsoft Teams (`TEAMS_WEBHOOK_URL`) and generic webhooks (`WEBHOOK_URL`, `WEBHOOK_TYPE`).
-
-Workflow env additions:
-- `LOOKBACK_DAYS`
+- `LOOKBACK_DAYS` (example: `1` or `7`)
+- `TELEGRAM_BOT_TOKEN`
+- `TELEGRAM_CHAT_ID`
 - `TEAMS_WEBHOOK_URL`
 - `WEBHOOK_URL`
+- `WEBHOOK_TYPE`
+
