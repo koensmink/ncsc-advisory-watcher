@@ -28,8 +28,7 @@ jobs:
       TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
       TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
       WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
-      LOOKBACK_DAYS: "1"
-      DEBUG: "1"
+      LOOKBACK_DAYS: ${{ github.event.inputs.days || '1' }}
 
     steps:
       - name: Weekend 23:55 Europe/Amsterdam gate
@@ -46,6 +45,11 @@ jobs:
         with:
           fetch-depth: 0
           persist-credentials: true
+      
+      - name: Sync latest main
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -60,33 +64,25 @@ jobs:
             pip install -r requirements.txt
           fi
 
-      # -------------------------
-      # 🔹 NIEUW — HARVEST SCRIPT
-      # -------------------------
       - name: Harvest CSAF -> CSV + JSONL
-        run: python harvest_ncsc.py --days "${LOOKBACK_DAYS:-${{ github.event.inputs.days || '1' }}}"
+        run: python harvest_ncsc.py --days "${LOOKBACK_DAYS}"
 
-      # -------------------------
-      # 🔹 NIEUW — NOTIFY SCRIPT
-      # -------------------------
       - name: Notify high-risk (Telegram + dedupe)
         run: python notify_ncsc.py
 
-      # ---------------------------------
-      # 🔹 AANGEPASTE COMMIT-LOGICA
-      # ---------------------------------
       - name: Commit & push outputs/state
         run: |
+          set -euo pipefail
+
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # Alles onder output meenemen (veiliger & minder fragile)
-          git add output 2>/dev/null || true
+          git add output/daily output/jsonl output/sent_cache.json 2>/dev/null || true
 
           if git diff --staged --quiet; then
             echo "No changes to commit."
-          else
-            git commit -m "Automated NCSC advisories update"
-            git pull --rebase --autostash
-            git push || true
+            exit 0
           fi
+
+          git commit -m "Automated NCSC advisories update"
+          git push origin HEAD:main
