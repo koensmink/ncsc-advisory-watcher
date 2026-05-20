@@ -6,6 +6,11 @@ on:
     - cron: "55 21 * * 6,0"
     - cron: "55 22 * * 6,0"
   workflow_dispatch:
+    inputs:
+      days:
+        description: "Lookback window in days"
+        required: false
+        default: "1"
 
 permissions:
   contents: write
@@ -21,7 +26,10 @@ jobs:
     env:
       TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
       TELEGRAM_CHAT_ID:   ${{ secrets.TELEGRAM_CHAT_ID }}
-      debug: "1"
+      TEAMS_WEBHOOK_URL: ${{ secrets.TEAMS_WEBHOOK_URL }}
+      WEBHOOK_URL: ${{ secrets.WEBHOOK_URL }}
+      LOOKBACK_DAYS: "1"
+      DEBUG: "1"
 
     steps:
       - name: Weekend 23:55 Europe/Amsterdam gate
@@ -55,8 +63,8 @@ jobs:
       # -------------------------
       # 🔹 NIEUW — HARVEST SCRIPT
       # -------------------------
-      - name: Harvest CSAF -> CSV
-        run: python harvest_ncsc.py
+      - name: Harvest CSAF -> CSV + JSONL
+        run: python harvest_ncsc.py --days "${LOOKBACK_DAYS:-${{ github.event.inputs.days || '1' }}}"
 
       # -------------------------
       # 🔹 NIEUW — NOTIFY SCRIPT
