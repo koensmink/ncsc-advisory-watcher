@@ -1,5 +1,8 @@
 {
-  "last_run_at": "2026-05-20T07:05:08.380149",
-  "todays_count": 1,
+  "last_run_at": "2026-05-20T10:17:44Z",
+  "count": 1,
+  "lookback_days": 1,
+  "window_start": "2026-05-20",
+  "window_end": "2026-05-20",
   "csv_path": "output/daily/2026-05-20.csv"
 }
