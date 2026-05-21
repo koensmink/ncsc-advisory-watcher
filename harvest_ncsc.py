@@ -2,7 +2,9 @@
 import argparse
 import csv
 import datetime
+import hashlib
 import json
+import sqlite3
 from pathlib import Path
 from urllib.parse import urljoin
 
@@ -16,6 +18,7 @@ LOCAL_TZ = ZoneInfo("Europe/Amsterdam")
 OUTPUT_DAILY_DIR = Path("output/daily")
 OUTPUT_JSONL_DIR = Path("output/jsonl")
 LAST_RUN_PATH = Path("output/last_run.json")
+DB_PATH = Path("output/ncsc.sqlite3")
 
 
 def parse_args() -> argparse.Namespace:
@@ -163,7 +166,99 @@ def write_jsonl(rows: list[dict], out_jsonl: Path) -> None:
             f.write(json.dumps(event, ensure_ascii=False) + "\n")
 
 
-def save_last_run(csv_path: str, count: int, days: int, start_date: datetime.date, end_date: datetime.date) -> None:
+def advisory_content_hash(row: dict) -> str:
+    canonical = json.dumps(row, sort_keys=True, ensure_ascii=False)
+    return hashlib.sha256(canonical.encode("utf-8")).hexdigest()
+
+
+def ensure_db(conn: sqlite3.Connection) -> None:
+    conn.execute(
+        """
+        CREATE TABLE IF NOT EXISTS advisories (
+            advisory_id TEXT NOT NULL,
+            version TEXT NOT NULL,
+            severity TEXT,
+            description TEXT,
+            link TEXT,
+            release_date TEXT,
+            source_url TEXT,
+            content_hash TEXT,
+            first_seen_at TEXT NOT NULL,
+            last_seen_at TEXT NOT NULL,
+            PRIMARY KEY (advisory_id, version)
+        )
+        """
+    )
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_advisories_release_date ON advisories (release_date)")
+    conn.execute("CREATE INDEX IF NOT EXISTS idx_advisories_severity ON advisories (severity)")
+
+
+def upsert_advisories(rows: list[dict], db_path: Path) -> None:
+    db_path.parent.mkdir(parents=True, exist_ok=True)
+    now_utc = datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+    with sqlite3.connect(db_path) as conn:
+        ensure_db(conn)
+        for row in rows:
+            advisory_id = row.get("AdvisoryID", "")
+            version = row.get("Version", "")
+            if not advisory_id or not version:
+                continue
+            c_hash = advisory_content_hash(row)
+            existing = conn.execute(
+                "SELECT content_hash, first_seen_at FROM advisories WHERE advisory_id = ? AND version = ?",
+                (advisory_id, version),
+            ).fetchone()
+            if existing is None:
+                conn.execute(
+                    """
+                    INSERT INTO advisories (
+                        advisory_id, version, severity, description, link, release_date, source_url,
+                        content_hash, first_seen_at, last_seen_at
+                    ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                    """,
+                    (
+                        advisory_id,
+                        version,
+                        row.get("Severity", ""),
+                        row.get("Description", ""),
+                        row.get("Link", ""),
+                        row.get("ReleaseDate", ""),
+                        row.get("Link", ""),
+                        c_hash,
+                        now_utc,
+                        now_utc,
+                    ),
+                )
+            else:
+                if existing[0] == c_hash:
+                    conn.execute(
+                        "UPDATE advisories SET last_seen_at = ? WHERE advisory_id = ? AND version = ?",
+                        (now_utc, advisory_id, version),
+                    )
+                else:
+                    conn.execute(
+                        """
+                        UPDATE advisories
+                        SET severity = ?, description = ?, link = ?, release_date = ?, source_url = ?,
+                            content_hash = ?, last_seen_at = ?
+                        WHERE advisory_id = ? AND version = ?
+                        """,
+                        (
+                            row.get("Severity", ""),
+                            row.get("Description", ""),
+                            row.get("Link", ""),
+                            row.get("ReleaseDate", ""),
+                            row.get("Link", ""),
+                            c_hash,
+                            now_utc,
+                            advisory_id,
+                            version,
+                        ),
+                    )
+        conn.commit()
+
+
+def save_last_run(csv_path: str, jsonl_path: str, db_path: str, count: int, days: int, start_date: datetime.date, end_date: datetime.date) -> None:
     LAST_RUN_PATH.parent.mkdir(parents=True, exist_ok=True)
     data = {
         "last_run_at": datetime.datetime.now(datetime.timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"),
@@ -172,6 +267,8 @@ def save_last_run(csv_path: str, count: int, days: int, start_date: datetime.dat
         "window_start": start_date.isoformat(),
         "window_end": end_date.isoformat(),
         "csv_path": csv_path,
+        "jsonl_path": jsonl_path,
+        "db_path": db_path,
     }
     LAST_RUN_PATH.write_text(json.dumps(data, indent=2), encoding="utf-8")
 
@@ -181,9 +278,10 @@ def main() -> int:
     rows, start_date, end_date = harvest_advisories(args.days)
     out_csv = OUTPUT_DAILY_DIR / f"{end_date.isoformat()}.csv"
     out_jsonl = OUTPUT_JSONL_DIR / f"{end_date.isoformat()}.jsonl"
+    upsert_advisories(rows, DB_PATH)
     write_csv(rows, out_csv)
     write_jsonl(rows, out_jsonl)
-    save_last_run(str(out_csv), len(rows), args.days, start_date, end_date)
+    save_last_run(str(out_csv), str(out_jsonl), str(DB_PATH), len(rows), args.days, start_date, end_date)
     print(f"✅ {len(rows)} advisories geschreven naar {out_csv} en {out_jsonl}")
     return 0
 
