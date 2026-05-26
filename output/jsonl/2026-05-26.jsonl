@@ -1,0 +1,1 @@
+{"event_type": "ncsc_advisory", "source": "NCSC-NL", "advisory_id": "NCSC-2026-0167", "version": "[1.00]", "severity": "[M/H]", "description": "Kwetsbaarheid verholpen in Cisco Secure Workload", "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0167", "release_date": "2026-05-26", "ingested_at": "2026-05-26T10:40:31Z"}
