@@ -1,2 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0188,[1.00],[M/H],Kwetsbaarheid verholpen in Veeam Backup & Replication,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0188,2026-06-10
 NCSC-2026-0180,[1.00],[H/H],Kwetsbaarheden verholpen in Ivanti Sentry,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0180,2026-06-10
