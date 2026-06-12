@@ -1,1 +1,4 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0197,[1.00],[M/H],Kwetsbaarheid verholpen in Fortinet FortiPortal,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0197,2026-06-12
+NCSC-2026-0196,[1.00],[M/H],Kwetsbaarheden verholpen in GitLab Enterprise Edition,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0196,2026-06-12
+NCSC-2026-0195,[1.00],[M/H],Kwetsbaarheid verholpen in Oracle PeopleSoft Enterprise PeopleTools,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0195,2026-06-12
