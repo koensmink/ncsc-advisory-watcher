@@ -1,2 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0199,[1.00],[M/H],Kwetsbaarheid verholpen in Cisco Catalyst SD-WAN Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0199,2026-06-16
 NCSC-2026-0179,[1.00],[H/H],Kwetsbaarheden verholpen in Check Point Remote and Mobile Access VPN-producten,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0179,2026-06-16
