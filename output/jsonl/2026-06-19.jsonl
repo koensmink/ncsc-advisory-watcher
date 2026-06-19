@@ -1,0 +1,1 @@
+{"event_type": "ncsc_advisory", "source": "NCSC-NL", "advisory_id": "NCSC-2026-0208", "version": "[1.00]", "severity": "[M/H]", "description": "Kwetsbaarheden verholpen in Cisco Identity Services Engine", "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0208", "release_date": "2026-06-19", "ingested_at": "2026-06-19T11:13:21Z"}
