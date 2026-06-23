@@ -1,1 +1,2 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0209,[1.00],[M/H],Kwetsbaarheden verholpen in MongoDB Server,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0209,2026-06-23
