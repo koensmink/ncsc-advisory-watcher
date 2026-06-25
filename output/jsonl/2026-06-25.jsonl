@@ -1,0 +1,1 @@
+{"event_type": "ncsc_advisory", "source": "NCSC-NL", "advisory_id": "NCSC-2026-0211", "version": "[1.00]", "severity": "[M/H]", "description": "Kwetsbaarheden verholpen in GitLab Community Edition en Enterprise Edition", "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0211", "release_date": "2026-06-25", "ingested_at": "2026-06-25T13:10:39Z"}
