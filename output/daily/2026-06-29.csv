@@ -1,1 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0213,[1.00],[M/H],Kwetsbaarheden verholpen in MISP platform,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0213,2026-06-29
+NCSC-2026-0212,[1.00],[M/H],Kwetsbaarheden verholpen in n8n workflow automation platform,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0212,2026-06-29
