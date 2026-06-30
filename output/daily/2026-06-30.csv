@@ -1,3 +1,4 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0216,[1.00],[M/H],Kwetsbaarheden verholpen in Citrix Netscaler ADC en Netscaler Gateway,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0216,2026-06-30
 NCSC-2026-0215,[1.00],[M/H],Kwetsbaarheden verholpen in Apple iOS en iPadOS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0215,2026-06-30
 NCSC-2026-0214,[1.00],[M/H],Kwetsbaarheden verholpen in Apple MacOS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0214,2026-06-30
