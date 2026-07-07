@@ -1,0 +1,1 @@
+{"event_type": "ncsc_advisory", "source": "NCSC-NL", "advisory_id": "NCSC-2026-0221", "version": "[1.00]", "severity": "[M/H]", "description": "Kwetsbaarheden verholpen in UniFi-producten van Ubiquiti Networks", "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0221", "release_date": "2026-07-07", "ingested_at": "2026-07-07T08:14:21Z"}
