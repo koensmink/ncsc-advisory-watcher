@@ -1,1 +1,2 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0222,[1.00],[M/H],Kwetsbaarheden verholpen in GitLab Enterprise Edition en Community Edition,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0222,2026-07-10
