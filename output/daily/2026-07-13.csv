@@ -1,1 +1,5 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0227,[1.00],[M/H],Kwetsbaarheden verholpen in Palo Alto Networks PAN-OS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0227,2026-07-13
+NCSC-2026-0226,[1.00],[M/H],Kwetsbaarheden verholpen in Progress MOVEit Transfer,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0226,2026-07-13
+NCSC-2026-0225,[1.00],[M/H],Kwetsbaarheden verholpen in Siemens SICORE,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0225,2026-07-13
+NCSC-2026-0224,[1.00],[M/H],Kwetsbaarheden verholpen in Juniper Networks Junos OS en Junos OS Evolved,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0224,2026-07-13
