@@ -1,4 +1,8 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0249,[1.00],[M/M],Kwetsbaarheden verholpen in Zoom,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0249,2026-07-17
+NCSC-2026-0248,[1.00],[M/H],Kwetsbaarheden verholpen in n8n workflow automation platform,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0248,2026-07-17
+NCSC-2026-0247,[1.00],[M/H],Kwetsbaarheden verholpen in Splunk Enterprise en Splunk Cloud Platform,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0247,2026-07-17
+NCSC-2026-0246,[1.00],[M/H],Kwetsbaarheden verholpen in Adobe Experience Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0246,2026-07-17
 NCSC-2026-0245,[1.00],[M/H],Kwetsbaarheid verholpen in Fortinet FortiSandbox,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0245,2026-07-17
 NCSC-2026-0244,[1.00],[M/H],Kwetsbaarheid verholpen in Fortinet FortiAuthenticator,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0244,2026-07-17
 NCSC-2026-0243,[1.00],[M/H],Kwetsbaarheid verholpen in Fortinet FortiClient EMS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0243,2026-07-17
