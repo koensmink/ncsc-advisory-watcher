@@ -1,4 +1,10 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0262,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle MySQL Server en MySQL Cluster,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0262,2026-07-22
+NCSC-2026-0261,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Java SE,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0261,2026-07-22
+NCSC-2026-0260,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle PeopleSoft Enterprise,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0260,2026-07-22
+NCSC-2026-0259,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Analytics,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0259,2026-07-22
+NCSC-2026-0258,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Financial Services,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0258,2026-07-22
+NCSC-2026-0257,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Enterprise Manager,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0257,2026-07-22
 NCSC-2026-0256,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Communications,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0256,2026-07-22
 NCSC-2026-0255,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle Commerce Platform,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0255,2026-07-22
 NCSC-2026-0254,[1.00],[M/H],Kwetsbaarheden verholpen in Oracle database producten,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0254,2026-07-22
