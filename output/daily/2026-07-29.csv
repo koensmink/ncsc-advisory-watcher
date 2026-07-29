@@ -1,2 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0269,[1.00],[M/H],Kwetsbaarheden verholpen in VMware producten,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0269,2026-07-29
 NCSC-2026-0268,[1.00],[M/H],Kwetsbaarheid verholpen in SQLite door SQLite Consortium,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0268,2026-07-29
