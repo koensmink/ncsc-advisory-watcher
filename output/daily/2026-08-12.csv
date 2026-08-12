@@ -1,1 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0289,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Exchange server,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0289,2026-08-12
+NCSC-2026-0287,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Azure,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0287,2026-08-12
