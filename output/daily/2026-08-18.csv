@@ -1,2 +1,4 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0216,[1.00],[M/H],Kwetsbaarheden verholpen in Citrix Netscaler ADC en Netscaler Gateway,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0216,2026-08-18
+NCSC-2026-0304,[1.00],[M/H],ZeroDay Kwetsbaarheid verholpen in GeoTools door OpenGeo,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0304,2026-08-18
 NCSC-2026-0303,[1.00],[M/H],Kwetsbaarheden verholpen in GitLab door GitLab Inc.,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0303,2026-08-18
