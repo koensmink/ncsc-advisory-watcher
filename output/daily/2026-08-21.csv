@@ -1,1 +1,4 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0323,[1.00],[M/H],Kwetsbaarheden verholpen in Cisco Secure Workload,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0323,2026-08-21
+NCSC-2026-0322,[1.00],[M/H],Kwetsbaarheden verholpen in Splunk Enterprise door Splunk,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0322,2026-08-21
+NCSC-2026-0321,[1.00],[M/H],Meerdere kwetsbaarheden verholpen in IBM AIX en IBM PowerVM VIOS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0321,2026-08-21
