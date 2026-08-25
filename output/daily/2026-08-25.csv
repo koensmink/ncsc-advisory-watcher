@@ -1,1 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0303,[1.00],[M/H],Kwetsbaarheden verholpen in GitLab door GitLab Inc.,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0303,2026-08-25
+NCSC-2026-0326,[1.00],[M/H],Kwetsbaarheden verholpen in Keycloak,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0326,2026-08-25
