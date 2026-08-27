@@ -1,1 +1,5 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0286,[1.00],[H/H],Kwetsbaarheden verholpen in Microsoft Office,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0286,2026-08-27
+NCSC-2026-0332,[1.00],[M/H],Kwetsbaarheden verholpen in Apache CloudStack,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0332,2026-08-27
+NCSC-2026-0331,[1.00],[M/H],Kwetsbaarheden verholpen in Adobe Campaign Classic,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0331,2026-08-27
+NCSC-2026-0330,[1.00],[M/H],Kwetsbaarheden verholpen in UniFi-producten van Ubiquiti,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0330,2026-08-27
