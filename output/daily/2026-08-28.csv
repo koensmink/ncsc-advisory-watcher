@@ -1,1 +1,4 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0334,[1.00],[M/H],Kwetsbaarheden verholpen in PaperCut MF en PaperCut NG van PaperCut,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0334,2026-08-28
+NCSC-2026-0289,[1.00],[H/H],Kwetsbaarheden verholpen in Microsoft Exchange server,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0289,2026-08-28
+NCSC-2026-0333,[1.00],[M/H],Kwetsbaarheden verholpen in CodeMeter Runtime van Wibu-Systems,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0333,2026-08-28
