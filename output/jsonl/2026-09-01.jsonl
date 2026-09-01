@@ -1,0 +1,1 @@
+{"event_type": "ncsc_advisory", "source": "NCSC-NL", "advisory_id": "NCSC-2026-0335", "version": "[1.00]", "severity": "[M/H]", "description": "Kwetsbaarheden verholpen in WatchGuard Fireware OS", "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0335", "release_date": "2026-09-01", "ingested_at": "2026-09-01T17:03:21Z"}
