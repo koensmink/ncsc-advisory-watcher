@@ -1,1 +1,4 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0340,[1.00],[M/H],Kwetsbaarheden verholpen in Aruba Networks ArubaOS-CX,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0340,2026-09-03
+NCSC-2026-0339,[1.00],[M/H],Kwetsbaarheden verholpen in HPE Networking Fabric Composer,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0339,2026-09-03
+NCSC-2026-0338,[1.00],[M/H],"Kwetsbaarheden verholpen in Cisco Nexus 9000 Series, IOS XR Software en Secure Email",https://advisories.ncsc.nl/advisory?id=NCSC-2026-0338,2026-09-03
