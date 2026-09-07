@@ -1,3 +1,4 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0318,[1.00],[H/H],Kwetsbaarheden verholpen in Citrix NetScaler ADC en NetScaler Gateway,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0318,2026-09-07
 NCSC-2026-0343,[1.00],[M/H],Kwetsbaarheden verholpen in GeoNetwork door OpenGeo,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0343,2026-09-07
 NCSC-2026-0342,[1.00],[H/H],Kwetsbaarheid verholpen in N-central van N-able,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0342,2026-09-07
