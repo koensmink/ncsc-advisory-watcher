@@ -1,4 +1,11 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0353,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Windows,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0353,2026-09-08
+NCSC-2026-0352,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Office,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0352,2026-09-08
+NCSC-2026-0351,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Developer Tools,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0351,2026-09-08
+NCSC-2026-0350,[1.00],[M/H],Kwetsbaarheden verholpen in SQL Server,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0350,2026-09-08
+NCSC-2026-0349,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Exchange server,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0349,2026-09-08
+NCSC-2026-0348,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Dynamics,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0348,2026-09-08
+NCSC-2026-0347,[1.00],[M/H],Kwetsbaarheden verholpen in Microsoft Azure,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0347,2026-09-08
 NCSC-2026-0346,[1.00],[M/H],Kwetsbaarheden verholpen in Siemens producten,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0346,2026-09-08
 NCSC-2026-0345,[1.00],[M/H],Kwetsbaarheden verholpen in MikroTik RouterOS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0345,2026-09-08
 NCSC-2026-0344,[1.00],[H/H],Kwetsbaarheid verholpen in Adobe Commerce en Magento,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0344,2026-09-08
