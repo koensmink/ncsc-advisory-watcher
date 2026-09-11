@@ -1,0 +1,1 @@
+{"event_type": "ncsc_advisory", "source": "NCSC-NL", "advisory_id": "NCSC-2026-0366", "version": "[1.00]", "severity": "[M/H]", "description": "Kwetsbaarheden verholpen in Arista EOS", "link": "https://advisories.ncsc.nl/advisory?id=NCSC-2026-0366", "release_date": "2026-09-11", "ingested_at": "2026-09-11T10:12:22Z"}
