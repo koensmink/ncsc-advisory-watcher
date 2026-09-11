@@ -1,2 +1,3 @@
 AdvisoryID,Version,Severity,Description,Link,ReleaseDate
+NCSC-2026-0342,[1.00],[H/H],Kwetsbaarheid verholpen in N-central van N-able,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0342,2026-09-11
 NCSC-2026-0366,[1.00],[M/H],Kwetsbaarheden verholpen in Arista EOS,https://advisories.ncsc.nl/advisory?id=NCSC-2026-0366,2026-09-11
